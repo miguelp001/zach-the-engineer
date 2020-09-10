@@ -1,0 +1,35 @@
+extends layout
+
+block content
+    //this is the source of some issue. dunno what it is though.
+    // Indicators of where we are
+    div(id="carouselExampleIndicators" class="carousel slide" data-ride="carousel")
+        ol(class="carousel-indicators")
+            li(data-target="#carouselExampleIndicators" data-slide-to="0" class="active")
+            li(data-target="#carouselExampleIndicators" data-slide-to="1")
+            li(data-target="#carouselExampleIndicators" data-slide-to="2")
+
+        // Slide items
+        div(class="carousel-inner")
+            div(class="carousel-item active" id="one")
+                div(class="carousel-caption d-none d-md-block")
+                    h5(class="display-4") Hexagonal Ring
+                    p(class="lead") I used Extrude cuts with the draft future, then mirrored several entities to get the shape I desired. The I flexted the material- giving it a radius, then revolved it amongst a made axis, I then did some more bending and flexing of the object. Then picked out my material.
+
+            div(class="carousel-item" id="two")
+                div(class="carousel-caption d-none d-md-block")
+                    h5(class="display-4") Exhaust Manifold - Solidworks
+                    p(class="lead") I used 3D sketching and the sweep feature to create the semi-complex tubing. The remainder of the part was simply made as normal with regular extruding and cutting. After creating the first two tubings on the left, I created two lines within a 3D sketch to create a new pane. I then mirrored them over and gave everything a shell of 0.1mm.
+
+            div(class="carousel-item" id="three")
+                div(class="carousel-caption d-none d-md-block")
+                    h5(class="display-4") Exhaust Manifold
+                    p(class="lead") This is a render of the exhaust manifold.
+
+        // controls
+        a(class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev")
+              span(class="carousel-control-prev-icon" aria-hidden="true")
+              span(class="sr-only") Previous
+        a(class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next")
+              span(class="carousel-control-next-icon" aria-hidden="true")
+              span(class="sr-only") Next

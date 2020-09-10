@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    div(class="jumbotron jumbotron-fluid")
+        div(class="text-center")
+            h1(class="display-3") Lets Make Something Special
+            p Use the form below to send a message to my inbox.
+
+    div(class="card-deck pb-2")
+        div(class="card")
+            div(class="card-body")
+                div(class="card-text") Here are some things that I'm pretty good at.
+                    form(role="form" action="/thanks" method="POST" id="forms" name="form1")
+                        div(class="form-row p-2")
+                            div(class="form-group col")
+                                input(type="text" class="form-control" placeholder="First Name" name="firstName")
+                            div(class="form-group col")
+                                input(type="text" class="form-control" placeholder="Last Name" name="lastName")
+
+                        div(class="form-row p-2")
+                            div(class="form-group col")
+                                input(type="email" class="form-control" placeholder="Email" name="email")
+                                small(class="form-text text-muted") I won't be sharing your email.
+                            div(class="form-group col")
+                                input(type="text" class="form-control" placeholder="Company" name="company")
+
+                        div(class="form-row p-2")
+                            div(class="form-group col")
+                                textarea(class="form-control" placeholder="Tell me about the project" rows="4" name="message")
+
+                        div(class="form-row pt-2")
+                            div(class="form-group col")
+                                button(type="submit" class="btn btn-secondary") Submit

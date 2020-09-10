@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    div(class="jumbotron jumbotron-fluid")
+        div(class="text-center")
+            h1(class="display-3") Hi, I'm Zach.
+            p(class="lead") Welcome to my website, #{title}.
+            p Here, I lay down examples of my #[a(href="/portfolio") professional work]. I always try to stay busy because there are always new things to #[a(href="/adventures") do and learn]. Maybe you want to get to know me a little better and learn my #[a(href= "/story") story]? If you are interested in discussing how my expertise can assist you and your company's goals, feel free to #[a(href= "/contact") contact me].
+            p Social media goes here.
+            
+    a(class="twitter-timeline" href="https://twitter.com/ZachEngineer?ref_src=twsrc%5Etfw") My Twitter Feed
+    script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")

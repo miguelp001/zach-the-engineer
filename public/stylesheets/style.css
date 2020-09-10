@@ -1,0 +1,42 @@
+.carousel-item {
+    height: 90vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#one, two, three {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#one {
+    background-image: url(../images/hex-render.jpg);
+}
+#two {
+    background-image: url(../images/exhaust-model.jpg);
+}
+#three {
+    background-image: url(../images/exhaust-render.JPG);
+}
+
+#name {
+    top: 20px;
+}
+
+#top {
+    /* transform: rotate(); */
+    background-image: url(../images/side.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#bottom {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    background-image: url(../images/side.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
